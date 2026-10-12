@@ -37,6 +37,18 @@
       "redis_hashes": ["dyson_settings"]
     },
     {
+      "id": "firecrawl_search",
+      "name": "Firecrawl",
+      "description": "Adds Firecrawl Search as a downloadable web search provider for Tater.",
+      "version": "1.0.0",
+      "entry": "integrations/firecrawl_search.py",
+      "sha256": "4cda2a36d941a329598a1dd5b6c6a2ff8780dad8ec06564b96d0fca15b4224dc",
+      "required": false,
+      "capabilities": ["web_search"],
+      "redis_hashes": ["firecrawl_search_settings"],
+      "redis_strings": ["tater:web_search:firecrawl_api_key"]
+    },
+    {
       "id": "google_cast",
       "name": "Google Cast",
       "description": "Discovers Google Cast TVs, speakers, and groups as direct Tater media playback targets.",
